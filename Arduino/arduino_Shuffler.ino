@@ -55,18 +55,18 @@ if(Serial.available()) { //if serial message recieved then run shufflecards func
 delay(1000);
 }
 
-void shuffleCards(){
+void shuffleCards(){ //function to randomly shuffle cards by randomly dealing cards off the top or bottom of pack
 
 for (int i=0; i<10; i++){
         int randmotor = random(0,2);
-        if (randmotor == 1){ 
+        if (randmotor == 1){ //drive top motor
           motor1.drive(250,125);
           delay(50);
           motor1.drive(-200,100);
           motor1.brake();
           delay(10);
         }
-        else if (randmotor == 0){
+        else if (randmotor == 0){ //drive bottom motor
           motor2.drive(220,125);
           delay(50);
           motor2.drive(-125,75);
