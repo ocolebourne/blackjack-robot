@@ -6,7 +6,7 @@
 
 #The main gameplay file
 #Running this file runs the entire robot
-#This code is based around the PyQT5 GUI control
+#This code is based around the PyQT5 GUI control.
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget, QInputDialog, QLineEdit, QMessageBox, QMainWindow, QShortcut
